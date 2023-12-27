@@ -1,0 +1,59 @@
+.container {
+  width: min(100%, 1440px);
+  margin: auto;
+  padding: 32px 20px;
+  gap: 48px 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 48px 146px 146px 284px;
+  grid-template-areas:
+  "HEADER HEADER HEADER HEADER"
+  "ASIDE BIGCARD BIGCARD IMG1"
+  "ASIDE BIGCARD BIGCARD IMG2"
+  "CARD1 CARD2 CARD3 CARD4" ;
+}
+/* header */
+header {
+  background-color: black;
+  grid-area: HEADER;
+}
+/* aside */
+.aside {
+  background-color: aqua;
+  grid-area: ASIDE;
+}
+/* bigcard */
+.bigcard {
+  background-color: blue;
+  grid-area: BIGCARD;
+}
+/* img1 */
+.img1 {
+  background-color: brown;
+  grid-area: IMG1;
+}
+/* img2 */
+.img2 {
+  background-color: green;
+  grid-area: IMG2;
+}
+/* card1 */
+.card1 {
+  background-color: orange;
+  grid-area: CARD1;
+}
+/* card2 */
+.card2 {
+  background-color: grey;
+  grid-area: CARD2;
+}
+/* card3 */
+.card3 {
+  background-color: red;
+  grid-area: CARD3;
+}
+/* card4 */
+.card4 {
+  background-color: yellow;
+  grid-area: CARD4;
+}
