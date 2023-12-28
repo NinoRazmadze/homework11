@@ -4,12 +4,12 @@
   --navfontSize: 18px;
   --navColor: #dfd9d9;
   --borderRadius: 4px;
-  --buttonColor: #C3B97F;
+  --buttonColor: #c3b97f;
   --buttonFontsize: 14px;
-  --priceColor:#1C5550;
+  --priceColor: #1c5550;
   --priceSize: 16px;
-  --h2Color: #C3B97F;
-  --asideTextcolor: #91B599;
+  --h2Color: #c3b97f;
+  --asideTextcolor: #91b599;
 }
 
 .container {
@@ -29,7 +29,6 @@
 }
 /* header */
 header {
-  background-color: var(--themecolor);
   grid-area: HEADER;
 }
 nav {
@@ -61,7 +60,6 @@ input {
   background-repeat: no-repeat;
   background-position: right 8px center;
   background-size: 16px;
-  
 }
 
 /* aside */
@@ -70,7 +68,7 @@ input {
   grid-area: ASIDE;
   padding: 38px 40px;
 }
-h2{
+h2 {
   color: var(--h2Color);
   font-size: var(--priceSize);
   font-weight: 400;
@@ -83,41 +81,46 @@ h2{
   margin-left: 8px;
   margin-top: 16px;
 }
-.aside_text{
+.aside_text {
   font-size: var(--buttonFontsize);
   color: var(--asideTextcolor);
   font-weight: 400px;
   line-height: 25px;
-
 }
 /* bigcard */
 .bigcard {
   grid-area: BIGCARD;
   position: relative;
 }
-.cart{
+.cart {
   display: flex;
   position: absolute;
   bottom: 0;
   left: 0;
-
+  width: 100%;
+  align-items: center;
+  background-color: var(--navColor);
+  padding-left: 8px;
 }
-p{
+.cardp {
   color: var(--priceColor);
   font-size: var(--priceSize);
+  font-weight: 700;
+  line-height: 24px;
+  width: 100%;
 }
-button{
+p {
+}
+.button1 {
   background-color: var(--buttonColor);
-color: var(--navColor);
-border: none;
-outline: none;
-padding: 9px 50px;
-font-size: var(--buttonFontsize);
-font-weight: 700;
-line-height:  22px;
+  color: var(--navColor);
+  border: none;
+  outline: none;
+  padding: 9px 50px;
+  font-size: var(--buttonFontsize);
+  font-weight: 700;
+  line-height: 22px;
 }
-
-
 
 /* img1 */
 .img1 {
@@ -131,21 +134,43 @@ line-height:  22px;
 }
 /* card1 */
 .card1 {
-  background-color: orange;
   grid-area: CARD1;
 }
 /* card2 */
 .card2 {
-  background-color: grey;
   grid-area: CARD2;
 }
 /* card3 */
 .card3 {
-  background-color: red;
   grid-area: CARD3;
 }
 /* card4 */
 .card4 {
-  background-color: yellow;
   grid-area: CARD4;
+}
+.cart2 {
+  display: flex;
+  background-color: var(--navColor);
+  justify-content: space-between;
+  align-items: center;
+  color: var(--priceColor);
+  font-weight: 700;
+  line-height: 24px;
+  padding-left: 8px;
+}
+.button2 {
+  background-color: var(--buttonColor);
+  color: var(--navColor);
+  border: none;
+  outline: none;
+  padding: 9px 10px;
+  font-size: var(--buttonFontsize);
+  font-weight: 700;
+  line-height: 22px;
+}
+h3 {
+  color: var(--navColor);
+  font-size: var(#dfd9d9);
+  font-weight: 400;
+  line-height: 24px;
 }
