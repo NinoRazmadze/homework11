@@ -1,4 +1,19 @@
+:root {
+  --themecolor: #1c5550;
+  --secondarybackground: #00000033;
+  --navfontSize: 18px;
+  --navColor: #dfd9d9;
+  --borderRadius: 4px;
+  --buttonColor: #C3B97F;
+  --buttonFontsize: 14px;
+  --priceColor:#1C5550;
+  --priceSize: 16px;
+  --h2Color: #C3B97F;
+  --asideTextcolor: #91B599;
+}
+
 .container {
+  background-color: var(--themecolor);
   width: min(100%, 1440px);
   margin: auto;
   padding: 32px 20px;
@@ -7,26 +22,103 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 48px 146px 146px 284px;
   grid-template-areas:
-  "HEADER HEADER HEADER HEADER"
-  "ASIDE BIGCARD BIGCARD IMG1"
-  "ASIDE BIGCARD BIGCARD IMG2"
-  "CARD1 CARD2 CARD3 CARD4" ;
+    "HEADER HEADER HEADER HEADER"
+    "ASIDE BIGCARD BIGCARD IMG1"
+    "ASIDE BIGCARD BIGCARD IMG2"
+    "CARD1 CARD2 CARD3 CARD4";
 }
 /* header */
 header {
-  background-color: black;
+  background-color: var(--themecolor);
   grid-area: HEADER;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_links {
+  display: flex;
+  gap: 84px;
+}
+.nav_links a {
+  font-size: var(--navfontSize);
+  color: var(--navColor);
+  font-weight: 400;
+  line-height: 21.78px;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+input {
+  width: 315px;
+  height: 32px;
+  background-color: var(--secondarybackground);
+  border-radius: var(--borderRadius);
+  background-image: url(../images/header_icon1.svg);
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 16px;
+  
+}
+
 /* aside */
 .aside {
-  background-color: aqua;
+  background-color: var(--secondarybackground);
   grid-area: ASIDE;
+  padding: 38px 40px;
+}
+h2{
+  color: var(--h2Color);
+  font-size: var(--priceSize);
+  font-weight: 400;
+  line-height: 27px;
+}
+.aside_list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 8px;
+  margin-top: 16px;
+}
+.aside_text{
+  font-size: var(--buttonFontsize);
+  color: var(--asideTextcolor);
+  font-weight: 400px;
+  line-height: 25px;
+
 }
 /* bigcard */
 .bigcard {
-  background-color: blue;
   grid-area: BIGCARD;
+  position: relative;
 }
+.cart{
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+}
+p{
+  color: var(--priceColor);
+  font-size: var(--priceSize);
+}
+button{
+  background-color: var(--buttonColor);
+color: var(--navColor);
+border: none;
+outline: none;
+padding: 9px 50px;
+font-size: var(--buttonFontsize);
+font-weight: 700;
+line-height:  22px;
+}
+
+
+
 /* img1 */
 .img1 {
   background-color: brown;
